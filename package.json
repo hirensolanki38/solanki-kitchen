@@ -1,0 +1,34 @@
+{
+  "name": "solanki-kitchen",
+  "version": "1.0.0",
+  "description": "Solanki's Kitchen App",
+  "keywords": [
+    "Food",
+    "Kitchen",
+    "Solanki",
+    "Learning",
+    "React"
+  ],
+  "homepage": "https://github.com/hirensolanki38/solanki-kitchen#readme",
+  "bugs": {
+    "url": "https://github.com/hirensolanki38/solanki-kitchen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hirensolanki38/solanki-kitchen.git"
+  },
+  "license": "ISC",
+  "author": "Hiren Solanki",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
