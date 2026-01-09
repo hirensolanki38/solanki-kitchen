@@ -20,7 +20,6 @@
   "license": "ISC",
   "author": "Hiren Solanki",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
