@@ -10,3 +10,7 @@ Solanki's Kitchen Food App
 - Footer
     - Copyright
     - Links
+
+======================================
+Notes : 
+    - Passing props to a component is like passing arguments to function

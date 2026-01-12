@@ -34,8 +34,9 @@ const RestaurntCard = () => {
             className="res-logo"
             alt="res-logo"
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vvovkpktwwt7qtw4tjzr"></img>
-            <h2>Res Name</h2>
-            <h3>Res Cusine</h3>
+            <h3>Vadapav</h3>
+            <h4>Fast-Food</h4>
+            <h4>4.4 stars</h4>
         </div>
     )
 };
@@ -46,6 +47,17 @@ const Body = () => {
             <div className="search">Search</div>
             <div className="res-container">
                 <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+                <RestaurntCard />
+
             </div>
         </div>
     )
