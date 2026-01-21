@@ -1,5 +1,6 @@
 import RestaurntCard from "./RestaurntCard";
 import resList from "../utils/resList";
+import { useState } from "react";
 
 const Body = () => {
     return (
