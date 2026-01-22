@@ -3,13 +3,15 @@ import resList from "../utils/resList";
 import { useState } from "react";
 
 const Body = () => {
-  let resListData = resList;
+  // let resListData = resList;
+  const [resListData, setResListData] = useState(resList);
     return (
         <div className="body">
             <div className="filter">
               <button className="filter-btn" onClick={() => {
                 console.log(resListData)
-                resListData = resListData.filter((res) => res.info.avgRating > 4.3)
+                const filteredResListData  = resListData.filter((res) => res.info.avgRating > 4.3)
+                setResListData(filteredResListData);
                 console.log(resListData);
               }}>Top Rated Restaurnt</button>
             </div>
