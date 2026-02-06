@@ -25,3 +25,11 @@ Ep : 5
 ======================================
 Notes : 
     - Passing props to a component is like passing arguments to function
+    - React uses Reconciliation Algoritham, (Works with React Fiber)
+    - Actual DOM are tags,
+    - Virtual DOM are representation of Actual DOM, it is a JavaScript Object
+    - In React 16, a new algorithem came which called React Fiber
+    - Homework - analysis
+        -> React Fiber
+        -> Incremental Rendering 
+        -> Virtual DOM is old concept, and React used it and design framework around this

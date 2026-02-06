@@ -21,20 +21,20 @@ const Body = () => {
     // https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2072943&lng=72.8436443&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
 
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2072943&lng=72.8436443&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2315453&lng=72.8662668&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
     );
 
     const json = await data.json();
     // Optional Chaining
     setResListData(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants,
     );
     setFilterResList(resListData);
   };
 
   // Conditional Rendering
-  return resListData.length === 0 ? (
+  return resListData?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
