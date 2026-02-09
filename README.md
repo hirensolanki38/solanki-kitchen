@@ -33,3 +33,4 @@ Notes :
         -> React Fiber
         -> Incremental Rendering 
         -> Virtual DOM is old concept, and React used it and design framework around this
+    - useEffect() hook

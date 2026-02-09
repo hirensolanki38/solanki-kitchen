@@ -21,13 +21,14 @@
   "author": "Hiren Solanki",
   "type": "commonjs",
   "scripts": {
-    "start" : "parcel index.html",
-    "build" : "parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^6.30.3"
   },
   "devDependencies": {
     "parcel": "^2.16.3"
