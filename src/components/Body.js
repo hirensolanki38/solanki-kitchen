@@ -25,11 +25,13 @@ const Body = () => {
     );
 
     const json = await data.json();
+
+    console.log(json);
+    const restaurantList =
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
     // Optional Chaining
-    setResListData(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants,
-    );
+    setResListData(restaurantList);
     setFilterResList(resListData);
   };
 
