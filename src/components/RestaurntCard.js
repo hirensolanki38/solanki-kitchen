@@ -1,18 +1,21 @@
-const RestaurntCard = (props) => {
-  const {resData} = props;
+import { RES_IMG_URL } from "../utils/constants";
 
-  const {name, cuisines, avgRating, cloudinaryImageId} = resData?.info
-    return (
-        <div className="res-card">
-          <img
-            className="res-logo"
-            alt="res-logo"
-            src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}></img>
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{avgRating} stars</h4>
-        </div>
-    )
+const RestaurntCard = (props) => {
+  const { resData } = props;
+
+  const { name, cuisines, avgRating, cloudinaryImageId } = resData?.info;
+  return (
+    <div className="res-card">
+      <img
+        className="res-logo"
+        alt="res-logo"
+        src={RES_IMG_URL + cloudinaryImageId}
+      ></img>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{avgRating} stars</h4>
+    </div>
+  );
 };
 
 export default RestaurntCard;
