@@ -28,11 +28,11 @@ const Body = () => {
 
     console.log(json);
     const restaurantList =
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
     // Optional Chaining
     setResListData(restaurantList);
-    setFilterResList(resListData);
+    setFilterResList(restaurantList);
   };
 
   // Conditional Rendering
